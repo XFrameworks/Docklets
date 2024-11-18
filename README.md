@@ -1,14 +1,19 @@
-# Launchpad
+# Docklets
 
-This project is a reduplication of macOS's Launchpad.app.
+This project is a reduplication of macOS's Docklets. It is a collection of small applications that are designed to do Dock related tasks.
 
-It allows you to modify and build a customized version of the Launchpad application.
+It allows you to modify and build a customized version of such application.
+
+## Apps
+
+- [x] Launchpad
+- [x] Mission Control
 
 ## Disclaimer
 
 This project is for learning and research purposes only.
 
-All rights to the original Launchpad.app belong to Apple Inc.
+The AppIcon asset is taken from macOS 15.1 release and is a property of Apple Inc.
 
 ## License
 
