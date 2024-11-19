@@ -8,6 +8,7 @@ It allows you to modify and build a customized version of such application.
 
 - [x] Launchpad
 - [x] Mission Control
+- [x] Screenshot (SIP disable is needed to run it)
 
 ## Disclaimer
 

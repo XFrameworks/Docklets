@@ -16,6 +16,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		27C936E32CEBA73B009CA47C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents;
+			dstSubfolderSpec = 1;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		27F029012CEB5F13001E1551 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -30,10 +39,18 @@
 /* Begin PBXFileReference section */
 		27C936692CEB99BD009CA47C /* Mission Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mission Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C936842CEB9D08009CA47C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		27C936D12CEBA6CB009CA47C /* Screenshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Screenshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F028EA2CEB591E001E1551 /* Launchpad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Launchpad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2729387D2CECE9FE00F10F73 /* Exceptions for "Screenshot" folder in "Screenshot" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				version.plist,
+			);
+			target = 27C936D02CEBA6CB009CA47C /* Screenshot */;
+		};
 		27C936852CEB9D22009CA47C /* Exceptions for "Mission Control" folder in "Mission Control" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -54,7 +71,20 @@
 /* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 		27C936882CEB9D34009CA47C /* Exceptions for "Mission Control" folder in "Copy Files" phase from "Mission Control" target */ = {
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			attributesByRelativePath = {
+				version.plist = (CodeSignOnCopy, );
+			};
 			buildPhase = 27C936862CEB9D27009CA47C /* CopyFiles */;
+			membershipExceptions = (
+				version.plist,
+			);
+		};
+		27C936E52CEBA748009CA47C /* Exceptions for "Screenshot" folder in "Copy Files" phase from "Screenshot" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			attributesByRelativePath = {
+				version.plist = (CodeSignOnCopy, );
+			};
+			buildPhase = 27C936E32CEBA73B009CA47C /* CopyFiles */;
 			membershipExceptions = (
 				version.plist,
 			);
@@ -81,6 +111,15 @@
 			path = "Mission Control";
 			sourceTree = "<group>";
 		};
+		27C936D22CEBA6CB009CA47C /* Screenshot */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2729387D2CECE9FE00F10F73 /* Exceptions for "Screenshot" folder in "Screenshot" target */,
+				27C936E52CEBA748009CA47C /* Exceptions for "Screenshot" folder in "Copy Files" phase from "Screenshot" target */,
+			);
+			path = Screenshot;
+			sourceTree = "<group>";
+		};
 		27F028EC2CEB591E001E1551 /* Launchpad */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -94,6 +133,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		27C936662CEB99BD009CA47C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27C936CE2CEBA6CB009CA47C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -116,6 +162,7 @@
 				27C936842CEB9D08009CA47C /* README.md */,
 				27F028EC2CEB591E001E1551 /* Launchpad */,
 				27C9366A2CEB99BD009CA47C /* Mission Control */,
+				27C936D22CEBA6CB009CA47C /* Screenshot */,
 				27F028EB2CEB591E001E1551 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,6 +172,7 @@
 			children = (
 				27F028EA2CEB591E001E1551 /* Launchpad.app */,
 				27C936692CEB99BD009CA47C /* Mission Control.app */,
+				27C936D12CEBA6CB009CA47C /* Screenshot.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,6 +201,29 @@
 			);
 			productName = "Mission Control";
 			productReference = 27C936692CEB99BD009CA47C /* Mission Control.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27C936D02CEBA6CB009CA47C /* Screenshot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27C936E02CEBA6CB009CA47C /* Build configuration list for PBXNativeTarget "Screenshot" */;
+			buildPhases = (
+				27C936CD2CEBA6CB009CA47C /* Sources */,
+				27C936CE2CEBA6CB009CA47C /* Frameworks */,
+				27C936CF2CEBA6CB009CA47C /* Resources */,
+				27C936E32CEBA73B009CA47C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				27C936D22CEBA6CB009CA47C /* Screenshot */,
+			);
+			name = Screenshot;
+			packageProductDependencies = (
+			);
+			productName = Screenshot;
+			productReference = 27C936D12CEBA6CB009CA47C /* Screenshot.app */;
 			productType = "com.apple.product-type.application";
 		};
 		27F028E92CEB591E001E1551 /* Launchpad */ = {
@@ -190,6 +261,9 @@
 					27C936682CEB99BD009CA47C = {
 						CreatedOnToolsVersion = 16.1;
 					};
+					27C936D02CEBA6CB009CA47C = {
+						CreatedOnToolsVersion = 16.1;
+					};
 					27F028E92CEB591E001E1551 = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -212,12 +286,20 @@
 			targets = (
 				27F028E92CEB591E001E1551 /* Launchpad */,
 				27C936682CEB99BD009CA47C /* Mission Control */,
+				27C936D02CEBA6CB009CA47C /* Screenshot */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		27C936672CEB99BD009CA47C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27C936CF2CEBA6CB009CA47C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -235,6 +317,13 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		27C936652CEB99BD009CA47C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27C936CD2CEBA6CB009CA47C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -270,7 +359,6 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 15.1;
 				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.exposelauncher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -297,10 +385,63 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 15.1;
 				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.exposelauncher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		27C936DE2CEBA6CB009CA47C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Screenshot/Screenshot.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 61;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Screenshot;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2010-2024 Apple Inc.\\nAll rights reserved.";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.screenshot.launcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		27C936DF2CEBA6CB009CA47C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Screenshot/Screenshot.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 61;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Screenshot;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2010-2024 Apple Inc.\\nAll rights reserved.";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.screenshot.launcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;
@@ -338,7 +479,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -351,6 +491,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -358,7 +499,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -404,13 +545,13 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -418,7 +559,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = (
@@ -449,7 +590,6 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 15.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.launchpad.launcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -476,7 +616,6 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 15.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.launchpad.launcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -492,6 +631,15 @@
 			buildConfigurations = (
 				27C936762CEB99BE009CA47C /* Debug */,
 				27C936772CEB99BE009CA47C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27C936E02CEBA6CB009CA47C /* Build configuration list for PBXNativeTarget "Screenshot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27C936DE2CEBA6CB009CA47C /* Debug */,
+				27C936DF2CEBA6CB009CA47C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
