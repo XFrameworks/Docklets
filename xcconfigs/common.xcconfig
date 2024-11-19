@@ -1,0 +1,11 @@
+// Set base SDK
+SDKROOT = macosx;
+
+// If enabled, indicates that binaries should be stripped and file mode, owner, and group information should be set to standard values.
+DEPLOYMENT_POSTPROCESSING=YES
+
+// Fix symbol link issue
+CLANG_ENABLE_MODULES = YES;
+
+CLANG_ENABLE_OBJC_ARC = YES;
+CLANG_ENABLE_OBJC_WEAK = YES;
