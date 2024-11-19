@@ -1,6 +1,8 @@
 # Docklets
 
-This project is a reduplication of macOS's Docklets. It is a collection of small applications that are designed to do Dock related tasks.
+This project is a reimplementation of macOS's Docklets.
+
+It is a collection of small applications that are designed to do Dock related tasks.
 
 It allows you to modify and build a customized version of such application.
 
@@ -8,7 +10,10 @@ It allows you to modify and build a customized version of such application.
 
 - [x] Launchpad
 - [x] Mission Control
-- [x] Screenshot (SIP disable is needed to run it)
+- [x] Screenshot
+
+> [!NOTE]
+> You need to disable SIP before running Screenshot app.
 
 ## Disclaimer
 
